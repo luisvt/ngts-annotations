@@ -1,6 +1,7 @@
 import {Directive, Inject} from '../src/at-angular';
 import IScope = angular.IScope;
 import IParseService = angular.IParseService;
+import {TestServiceThree} from './inject-and-service';
 
 interface IFirstComponentScope extends IScope {
   name: string;
@@ -22,7 +23,8 @@ export class TestDirective {
   name: string;
 
   constructor(@Inject('$scope') private $scope: IFirstComponentScope,
-              @Inject('$parse') private $parse: IParseService) {
+              @Inject('$parse') private $parse: IParseService,
+              @Inject(TestServiceThree) private testServiceThree: TestServiceThree) {
     $scope.name = this.name = 'FirstTestCtrl';
   }
 

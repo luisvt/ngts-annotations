@@ -2,11 +2,12 @@ import 'angular-mocks';
 import {testModule} from './module';
 import IComponentControllerService = angular.IComponentControllerService;
 import {TestComponent} from './component';
+import {TestServiceThree} from './inject-and-service';
 
 describe('@Component (with @Inject)', () => {
   let scope;
   let element;
-  let testComponentCtrl;
+  let testComponent: TestComponent;
 
   beforeEach(() => {
     angular.mock.module(testModule.name);
@@ -15,13 +16,18 @@ describe('@Component (with @Inject)', () => {
       scope.$element = {};
       element = $compile('<test-component></test-component>')(scope);
       $rootScope.$digest();
-      testComponentCtrl = $componentController('testComponent', scope);
+      testComponent = <TestComponent> $componentController('testComponent', scope);
     });
   });
 
   it('should instantiate decorated class as new service', () => {
     expect(element).toBeDefined();
-    expect(testComponentCtrl).toEqual(jasmine.any(TestComponent));
+    expect(testComponent).toEqual(jasmine.any(TestComponent));
+    expect(testComponent.testServiceThree).toEqual(jasmine.any(TestServiceThree));
+  });
+
+  it('should assign proper $inject array to service constructor', () => {
+    expect(TestComponent.$inject).toEqual(['$element', 'TestServiceThree']);
   });
 
   it('should execute directive on element', () => {

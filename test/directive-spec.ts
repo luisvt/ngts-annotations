@@ -21,7 +21,7 @@ describe('@Directive (with @Inject)', () => {
   });
 
   it('should assign proper $inject array to service constructor', () => {
-    expect(TestDirective.$inject).toEqual(['$scope', '$parse']);
+    expect(TestDirective.$inject).toEqual(['$scope', '$parse', 'TestServiceThree']);
   });
 
   it('should execute directive on element', () => {

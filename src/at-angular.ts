@@ -11,11 +11,11 @@ export function attachInjects(target: any, ...args: any[]): any {
   return target;
 }
 
-export function Inject(...args: string[]) {
+export function Inject(...args: Array<string | Function>) {
   return (target: any, key?: string, index?: number): void => {
     if (angular.isNumber(index)) {
       target.$inject = target.$inject || [];
-      target.$inject[index] = args[0];
+      target.$inject[index] = typeof args[0] === 'function' ? (args[0] as any).name : args[0];
     } else {
       target.$inject = args;
     }

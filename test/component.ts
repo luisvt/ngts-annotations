@@ -1,5 +1,6 @@
 import {Component, Inject} from '../src/at-angular';
 import IAugmentedJQuery = angular.IAugmentedJQuery;
+import {TestServiceThree} from './inject-and-service';
 
 @Component({
   name: 'testComponent',
@@ -8,7 +9,8 @@ import IAugmentedJQuery = angular.IAugmentedJQuery;
 export class TestComponent {
   name: string = 'hello';
 
-  constructor(@Inject('$element') private $element: IAugmentedJQuery) {
+  constructor(@Inject('$element') private $element: IAugmentedJQuery,
+              @Inject(TestServiceThree) public testServiceThree: TestServiceThree) {
   }
 
   $onInit(): void {

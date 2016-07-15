@@ -28,7 +28,7 @@
         return function (target, key, index) {
             if (angular.isNumber(index)) {
                 target.$inject = target.$inject || [];
-                target.$inject[index] = args[0];
+                target.$inject[index] = typeof args[0] === 'function' ? args[0].name : args[0];
             }
             else {
                 target.$inject = args;
