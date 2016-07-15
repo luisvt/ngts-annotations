@@ -1,6 +1,6 @@
 {
   "name": "ngts-annotations",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "TypeScript 1.8+ annotations (decorators) for AngularJS 1.x",
   "repository": {
     "type": "git",

@@ -97,5 +97,4 @@
     }
     exports.autoDeclare = autoDeclare;
 });
-
 //# sourceMappingURL=at-angular.js.map
