@@ -1,6 +1,6 @@
 {
   "name": "ngts-annotations",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "TypeScript 1.8+ annotations (decorators) for AngularJS 1.x",
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "requirejs": "^2.2.0",
     "ts-helpers": "^1.1.1"
   },
+  "main": "src/at-angular.js",
   "devDependencies": {
     "angular-mocks": "^1.5.7",
     "babel-core": "^6.10.4",

@@ -1,14 +1,16 @@
 {
-  "name": "angular-typescript",
-  "version": "0.0.10",
+  "name": "ngts-annotations",
+  "version": "1.0.2",
   "dependencies": {
     "angular": "^1.5.7",
-    "angular-resource": "^1.5.7"
+    "angular-resource": "^1.5.7",
+    "requirejs": "^2.2.0",
+    "ts-helpers": "^1.1.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.2.0"
   },
-  "authors": ["Jakub Strojewski <jakub.strojewski@gmail.com>"],
+  "authors": ["Luis Vargas <luisvargastijerino@gmail.com>"],
   "ignore": [
     "test",
     "ts",
@@ -21,12 +23,14 @@
   ],
   "keywords": [
     "TypeScript",
-    "AngularJS"
+    "AngularJS",
+    "decorators",
+    "annotations"
   ],
   "license": "WTFPL",
-  "main": "at-angular.ts",
+  "main": "src/at-angular.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ulfryk/angular-typescript.git"
+    "url": "https://github.com/luisvt/ngts-annotations"
   }
 }
