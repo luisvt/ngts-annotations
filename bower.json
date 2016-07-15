@@ -1,6 +1,6 @@
 {
   "name": "ngts-annotations",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "angular": "^1.5.7",
     "angular-resource": "^1.5.7",
