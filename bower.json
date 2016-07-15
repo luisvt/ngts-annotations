@@ -28,7 +28,6 @@
     "annotations"
   ],
   "license": "WTFPL",
-  "main": "src/at-angular.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/luisvt/ngts-annotations"

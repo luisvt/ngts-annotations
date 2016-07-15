@@ -1,3 +1,7 @@
+/.babelrc
+/tslint.json
+/tsconfig.json
+/karma.conf.js
 
 /test/
 /bower.json
