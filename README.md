@@ -1,4 +1,4 @@
-Angular-TypeScript
+ngts-annotations
 ==================
 
 [![GitHub version](https://badge.fury.io/gh/ulfryk%2Fangular-typescript.svg)](http://badge.fury.io/gh/ulfryk%2Fangular-typescript)
@@ -20,7 +20,7 @@ Angular-TypeScript
 What ?
 ------
 
-**angular-typescript** provides annotation like decorators:
+**ngts-annotations** provides annotation like decorators:
 
 ```
 @Service()
@@ -70,7 +70,7 @@ import {SomeService} from 'some.service.ts';
 export someModule = angular.module('someModule', []).service('someService', SomeService);
 ```
 
-Using **angular-typescript** it will look like:
+Using **ngts-annotations** it will look like:
 
 ```typescript
 @Service()
@@ -132,7 +132,7 @@ import {SomeService} from 'some.service.ts';
 export someModule = angular.module('someModule', []).service('someService', SomeService);
 ```
 
-Using **angular-typescript** it will look like:
+Using **ngts-annotations** it will look like:
 
 ```typescript
 @Service()
@@ -178,7 +178,7 @@ and in the main module:
 ```typescript
 //# some.module.ts
 
-import {autoDeclare} from 'angular-typescript/at-angular';
+import {autoDeclare} from 'ngts-annotations/src/at-angular';
 import {SomeService} from 'some.service.ts';
 
 export someModule = autoDeclare('someModule', [], [SomeService]);
@@ -220,7 +220,7 @@ import {SomeService} from 'some.service.ts';
 export someModule = angular.module('someModule', []).service('someController', SomeController);
 ```
 
-Using **angular-typescript** it will look like:
+Using **ngts-annotations** it will look like:
 
 ```typescript
 @Controller()
@@ -296,7 +296,7 @@ import {SomeService} from 'some.service.ts';
 export someModule = angular.module('someModule', []).service('testDirective', testDirectiveConfig);
 ```
 
-Using **angular-typescript** it will look like:
+Using **ngts-annotations** it will look like:
 
 ```typescript
 
