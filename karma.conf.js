@@ -31,9 +31,9 @@ module.exports = function (config) {
       'karma-phantomjs-launcher',
       'karma-requirejs'
     ],
-    // preprocessors: {
-    //   '../src/at-*.js': ['coverage']
-    // },
+    preprocessors: {
+      'src/**/*.js': ['coverage']
+    },
     captureTimeout: 60000,
     singleRun: true,
     frameworks: ['jasmine', 'requirejs']
