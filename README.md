@@ -3,7 +3,7 @@ ngts-annotations
 
 [![GitHub version](https://badge.fury.io/js/ngts-annotations.svg)](https://badge.fury.io/js/ngts-annotations.svg)
 [![Build Status](https://travis-ci.org/luisvt/ngts-annotations.svg)](https://travis-ci.org/luisvt/ngts-annotations.svg)
-[![Coverage Status](https://coveralls.io/repos/luisvt/ngts-annotations/badge.svg?branch=master)](https://coveralls.io/r/luisvt/ngts-annotations?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/luisvt/ngts-annotations/badge.svg?branch=master)](https://coveralls.io/github/luisvt/ngts-annotations?branch=master)
 
 [![npm version](https://badge.fury.io/js/ngts-annotations.svg)](http://badge.fury.io/js/ngts-annotations)
 
