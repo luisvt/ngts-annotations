@@ -52,4 +52,5 @@
     }
     exports.Resource = Resource;
 });
+
 //# sourceMappingURL=at-angular-resource.js.map

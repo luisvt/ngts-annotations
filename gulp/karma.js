@@ -8,7 +8,7 @@ gulp.task('karma-tdd', ['ts'], function (done) {
         configFile: config,
         coverageReporter: {
             type : 'html',
-            dir : '../coverage/'
+            dir : 'coverage'
         },
         browsers: ['Chrome']
     }, done).start();
@@ -20,7 +20,7 @@ gulp.task('karma-ci', function (done) {
         coverageReporter: {
             type: 'lcov',
             subdir: 'lcov',
-            dir: '../coverage/'
+            dir: 'coverage'
         },
         singleRun: true,
         autoWatch: false
@@ -41,7 +41,7 @@ gulp.task('karma-coverage', function (done) {
         configFile: config,
         coverageReporter: {
             type : 'html',
-            dir : '../coverage/'
+            dir : 'coverage'
         },
         singleRun: true,
         autoWatch: false
