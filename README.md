@@ -1,21 +1,16 @@
 ngts-annotations
 ==================
 
-[![GitHub version](https://badge.fury.io/gh/ulfryk%2Fangular-typescript.svg)](http://badge.fury.io/gh/ulfryk%2Fangular-typescript)
-[![Build Status](https://travis-ci.org/ulfryk/angular-typescript.svg)](https://travis-ci.org/ulfryk/angular-typescript)
-[![Coverage Status](https://coveralls.io/repos/ulfryk/angular-typescript/badge.svg?branch=master)](https://coveralls.io/r/ulfryk/angular-typescript?branch=master)
+[![GitHub version](https://badge.fury.io/js/ngts-annotations.svg)](https://badge.fury.io/js/ngts-annotations.svg)
+[![Build Status](https://travis-ci.org/luisvt/ngts-annotations.svg)](https://travis-ci.org/luisvt/ngts-annotations.svg)
+[![Coverage Status](https://coveralls.io/repos/luisvt/ngts-annotations/badge.svg?branch=master)](https://coveralls.io/r/luisvt/ngts-annotations?branch=master)
+
+[![npm version](https://badge.fury.io/js/ngts-annotations.svg)](http://badge.fury.io/js/ngts-annotations)
+
+[![Bower version](https://badge.fury.io/bo/ngts-annotations.svg)](http://badge.fury.io/bo/ngts-annotations)
 
 
-[![npm version](https://badge.fury.io/js/angular-typescript.svg)](http://badge.fury.io/js/angular-typescript)
-[![Dependency Status](https://www.versioneye.com/user/projects/5591b8f9396561001900009b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5591b8f9396561001900009b)
-
-
-[![Bower version](https://badge.fury.io/bo/angular-typescript.svg)](http://badge.fury.io/bo/angular-typescript)
-[![Dependency Status](https://www.versioneye.com/user/projects/5591b93039656100200000a9/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5591b93039656100200000a9)
-
-
-
-> TypeScript 1.8+ annotations (decorators) for AngularJS 1.5.x 
+> TypeScript 1.8+ annotations (decorators) for AngularJS 1.5.x
 
 What ?
 ------
@@ -29,7 +24,7 @@ What ?
 @Directive(config: IDirectiveConfig)
 @Factory()
 @Resource()
-@Component(config: IComponentConfig) 
+@Component(config: IComponentConfig)
 ```
 
 Why ?
@@ -52,7 +47,7 @@ export class SomeService {
     constructor() {
         // do stuff $http and $parse
     }
-    
+
     public someMethod(anArg: number): boolean {
         // do some stuff
     }
@@ -79,7 +74,7 @@ export class SomeService {
     constructor() {
         // do stuff
     }
-    
+
     public someMethod(anArg: number): boolean {
         // do some stuff
     }
@@ -114,7 +109,7 @@ export class SomeService {
     ) {
         // do stuff with $http and $parse;
     }
-    
+
     public someMethod(anArg: number): boolean {
         // do some stuff with this.$parse
     }
@@ -144,7 +139,7 @@ export class SomeService {
     ) {
         // do stuff with $http and $parse;
     }
-    
+
     public someMethod(anArg: number): boolean {
         // do some stuff with this.$parse
     }
@@ -160,12 +155,12 @@ or
 export class SomeService {
 
     constructor(
-        private $http: angular.IHttpService, 
+        private $http: angular.IHttpService,
         private $parse: angular.IParseService
     ) {
         // do stuff with $http and $parse;
     }
-    
+
     public someMethod(anArg: number): boolean {
         // do some stuff with this.$parse();
     }
@@ -203,7 +198,7 @@ export class SomeController {
     ) {
         // do stuff with $scope and $$parse;
     }
-    
+
     public someMethod(anArg: number): boolean {
         // do some stuff with this.$$parse();
     }
@@ -232,7 +227,7 @@ export class SomeController {
     ) {
         // do stuff with $scope and $$parse;
     }
-    
+
     public someMethod(anArg: number): boolean {
         // do some stuff with this.$$parse();
     }
