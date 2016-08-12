@@ -2,21 +2,15 @@
 
 import gulp from 'gulp';
 
-import ts from 'gulp-typescript';
 import tslint from 'gulp-tslint';
-import sourceMaps from 'gulp-sourcemaps';
+var exec = require('child_process').exec;
 
-var tsProject = ts.createProject('tsconfig.json');
-
-gulp.task('ts-build', function () {
-  return gulp.src(['**/*.ts', 'typings/**/*.d.ts', '!node_modules/**/*.ts'])
-    .pipe(sourceMaps.init())
-    .pipe(ts(tsProject))
-    .pipe(sourceMaps.write('', {
-      sourceRoot: ' ',
-      mapSources: (destPath) => '../' + destPath
-    }))
-    .pipe(gulp.dest(''));
+gulp.task('ts-build', function (cb) {
+  exec('node node_modules/typescript/lib/tsc.js', function (err, stdout, stderr) {
+    if (stdout) console.log(stdout);
+    if (stderr) console.log(stderr);
+    cb(err);
+  });
 });
 
 gulp.task('ts-lint', function () {
