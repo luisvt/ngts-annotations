@@ -1,3 +1,4 @@
+import * as angular from 'angular';
 import 'angular-mocks';
 import {TestDirective} from './directive';
 import {testModule} from './module';

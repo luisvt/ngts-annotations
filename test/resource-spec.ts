@@ -1,5 +1,6 @@
 import {UserResource} from './resource';
 import {testModule} from './module';
+import * as angular from 'angular';
 import 'angular-mocks';
 
 describe('@Resource (with @inject)', () => {

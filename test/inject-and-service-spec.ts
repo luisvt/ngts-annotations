@@ -1,5 +1,6 @@
 import {TestServiceThree} from './inject-and-service';
 import {testModule} from './module';
+import * as angular from 'angular';
 import 'angular-mocks';
 
 describe('@inject & @service together', () => {

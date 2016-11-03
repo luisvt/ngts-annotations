@@ -1,5 +1,6 @@
 import {testModule} from './module';
 import {TestFactory} from './class-factory';
+import angular = require('angular');
 import 'angular-mocks';
 
 describe('@Factory (with @inject)', () => {

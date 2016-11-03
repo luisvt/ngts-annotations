@@ -1,5 +1,6 @@
 import {TestServiceOne} from './inject';
 import {testModule} from './module';
+import * as angular from 'angular';
 import 'angular-mocks';
 import {Inject} from '../src/at-angular';
 

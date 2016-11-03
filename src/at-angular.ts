@@ -1,7 +1,6 @@
-import 'angular';
+import * as angular from 'angular';
 import 'ts-helpers';
 import IModule = angular.IModule;
-import IDirective = angular.IDirective;
 import IComponentOptions = angular.IComponentOptions;
 
 export function attachInjects(target: any, ...args: any[]): any {
@@ -36,6 +35,10 @@ export function Controller() {
       module.controller(target.name, target);
     };
   };
+}
+
+export interface IDirective extends angular.IDirective {
+  name: string
 }
 
 export function Directive(config: IDirective) {

@@ -1,3 +1,4 @@
+import * as angular from 'angular';
 import 'angular-resource';
 import IPromise = angular.IPromise;
 import IResourceArray = angular.resource.IResourceArray;

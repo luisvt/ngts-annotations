@@ -1,7 +1,8 @@
+import * as angular from 'angular';
+import 'angular-mocks';
 import {Controller} from '../src/at-angular';
 import {FirstTestCtrl} from './controller';
 import {testModule} from './module';
-import 'angular-mocks';
 
 describe('@controller (with @inject)', () => {
   let $scope = null;

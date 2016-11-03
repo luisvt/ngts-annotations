@@ -21,7 +21,7 @@ require.config({
   },
 
   shim: {
-    // 'angular': {exports: 'angular'},
+    'angular': {exports: 'angular'},
     'angular-mocks': {deps: ['angular']},
     'angular-resource': {deps: ['angular']}
   },

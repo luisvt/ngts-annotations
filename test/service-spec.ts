@@ -2,6 +2,7 @@
 import {Service} from '../src/at-angular';
 import {testModule} from './module';
 import {TestServiceTwo} from './service';
+import * as angular from 'angular';
 import 'angular-mocks';
 
 describe('@Service', () => {
