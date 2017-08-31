@@ -22,7 +22,7 @@ export function Inject(...args: Array<string | Function>) {
 }
 
 export function Service() {
-  return (target): void => {
+  return (target:any): void => {
     target.__$$declare = (module: IModule) => {
       module.service(target.name, target);
     };
@@ -30,7 +30,7 @@ export function Service() {
 }
 
 export function Controller() {
-  return (target): void => {
+  return (target:any): void => {
     target.__$$declare = (module: IModule) => {
       module.controller(target.name, target);
     };
@@ -42,7 +42,7 @@ export interface IDirective extends angular.IDirective {
 }
 
 export function Directive(config: IDirective) {
-  return (target): void => {
+  return (target:any): void => {
     config.controller = target;
     target.__$$declare = (module: IModule) => {
       module.directive(config.name, () => (config));
